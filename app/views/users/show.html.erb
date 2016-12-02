@@ -1,0 +1,7 @@
+<% provide(:title, full_name(@user.name, @user.surname)) %>
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <%= @user.name %>, <%= @user.email %>
+    </div>
+</div>

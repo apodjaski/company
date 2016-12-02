@@ -7,4 +7,8 @@ module ApplicationHelper
             base_title + " - " + page_title  
         end
     end
+    
+    def full_name(name, surname)
+        full_name = name + " " + surname
+    end
 end

@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   root 'pages#about'
   
+  resources :users
+  
   get 'pages/contact'
-  get 'users/new'
+  get  '/rejestracja' => 'users#new', as: :sign_up
+  post '/rejestracja' => 'users#create', as: :sign_up_2
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
